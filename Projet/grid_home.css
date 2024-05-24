@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('arc_triomphe_pixel.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(80%);
+}
+
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.welcome-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Légère transparence pour permettre de voir le fond */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Ombre plus prononcée pour mieux distinguer le conteneur */
+    width: 50%; /* Largeur ajustée pour une meilleure visibilité des éléments internes */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alignement vertical des éléments internes */
+}
+
+.welcome-title, h3 {
+    color: #333;
+    font-size: 24px; /* Taille uniforme pour les titres */
+    margin: 20px 0;
+}
+
+input[type="text"], button {
+    width: 90%; /* Légèrement plus étroit pour une distinction claire des champs */
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition douce pour le survol */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#gridList {
+    width: 100%; /* Utilise toute la largeur du conteneur pour une mise en page uniforme */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les boutons dans la liste */
+    padding-top: 20px; /* Espacement au-dessus de la liste pour la séparer visuellement du reste */
+}
